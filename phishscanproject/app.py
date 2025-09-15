@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify, session, Response
 import json
 from datetime import datetime
-from phishingdetector import analyze, is_trusted_domain, domain_parts
+from phishing_detector import analyze, is_trusted_domain, domain_parts
 import os
 
 # File to store scan history
@@ -300,3 +300,4 @@ if __name__ == '__main__':
     app.run(debug=True)
 
     
+
